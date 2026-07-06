@@ -8,7 +8,7 @@
    Example: if your form endpoint is https://formspree.io/f/xdoqwxyz
    then FORMSPREE_FORM_ID = "xdoqwxyz".
    -------------------------------------------------------------------------- */
-const FORMSPREE_FORM_ID = "FORM_ID"; // <-- REPLACE with your real Formspree ID
+const FORMSPREE_FORM_ID = "xqevjzyz";
 
 /* ---------- Email capture forms ---------- */
 document.querySelectorAll("form[data-capture]").forEach((form) => {

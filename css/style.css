@@ -1,5 +1,5 @@
 /* ==========================================================================
-   [COURSE NAME] — Shopify Course Funnel
+   ZeroToStore — Shopify Course Funnel
    Design system: modern-commercial. Indigo primary, ember orange accent,
    Bricolage Grotesque display + Inter body.
    ========================================================================== */
@@ -12,9 +12,9 @@
   --ink-soft: #2b3a52;
   --muted: #5a6a84;
   --border: #e2e8f3;
-  --primary: #2e4bf2;
-  --primary-dark: #1f38c9;
-  --primary-soft: #e8ecfe;
+  --primary: #0064fe; /* ZeroToStore logo blue */
+  --primary-dark: #004fd0;
+  --primary-soft: #e6f0ff;
   --accent: #ff6b2c;
   --accent-soft: #fff0e8;
   --navy: #0e1b2e;
@@ -134,9 +134,9 @@ p { text-wrap: pretty; }
 .btn-primary {
   background: var(--primary);
   color: #fff;
-  box-shadow: 0 4px 14px rgba(46, 75, 242, 0.35);
+  box-shadow: 0 4px 14px rgba(0, 100, 254, 0.35);
 }
-.btn-primary:hover { background: var(--primary-dark); box-shadow: 0 6px 20px rgba(46, 75, 242, 0.45); }
+.btn-primary:hover { background: var(--primary-dark); box-shadow: 0 6px 20px rgba(0, 100, 254, 0.45); }
 
 .btn-ghost {
   background: transparent;
@@ -176,6 +176,9 @@ p { text-wrap: pretty; }
   text-decoration: none;
   letter-spacing: -0.01em;
 }
+.nav-logo-img { height: 32px; width: auto; display: block; }
+.logo-to { color: var(--primary); }
+.site-footer .logo-to { color: #4d9aff; }
 .nav-menu {
   display: flex;
   align-items: center;

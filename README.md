@@ -1,4 +1,4 @@
-# [COURSE NAME] — Shopify Course Funnel Site
+# ZeroToStore — Shopify Course Funnel Site
 
 A static marketing funnel for the Shopify eCommerce course: lead magnet email capture, three free interactive tools, and a waitlist/pricing section. Plain HTML/CSS/JS — no build step, no backend.
 
@@ -20,17 +20,9 @@ A static marketing funnel for the Shopify eCommerce course: lead magnet email ca
 
 All links are relative, so the site works from the subpath without any changes.
 
-## 2. Set up email capture (Formspree — free)
+## 2. Email capture (Formspree)
 
-Signups currently go nowhere until you do this (takes ~3 minutes):
-
-1. Create a free account at [formspree.io](https://formspree.io).
-2. Click **New form**, name it (e.g. "Course funnel"), and copy the form's ID — it's the last part of the endpoint URL: `https://formspree.io/f/`**`xdoqwxyz`**.
-3. Open [js/main.js](js/main.js) and replace the placeholder on the first constant:
-   ```js
-   const FORMSPREE_FORM_ID = "FORM_ID"; // <-- paste your ID here, e.g. "xdoqwxyz"
-   ```
-4. That's it — every form on the site (PDF capture, waitlist, tool pages) uses this one ID.
+**Already configured.** The Formspree form ID (`xqevjzyz`) is set in [js/main.js](js/main.js) — every form on the site (PDF capture, waitlist, tool pages) posts to it. To switch to a different form later, change the `FORMSPREE_FORM_ID` constant at the top of that file.
 
 Each submission includes a hidden `source` field so you can tell them apart in the Formspree dashboard:
 - `source: pdf` — wants the lead magnet
@@ -38,21 +30,17 @@ Each submission includes a hidden `source` field so you can tell them apart in t
 
 Formspree's free tier includes 50 submissions/month; upgrade or swap the provider if you outgrow it.
 
-## 3. Add the real lead magnet PDF
+## 3. The lead magnet PDF
 
-Replace the placeholder at [assets/lead-magnet.pdf](assets/lead-magnet.pdf) with the real guide — **keep the same filename** and every download link keeps working.
+The download links point at `assets/The AI Advantage.pdf`. If you replace the guide, **keep the same filename** — otherwise update the links in `index.html` and the three tool pages (search for `The%20AI%20Advantage.pdf`).
 
-## 4. Find-and-replace checklist before launch
-
-Search the whole project for these and replace:
+## 4. Still placeholder — replace before launch
 
 | Placeholder | Where | Replace with |
 |---|---|---|
-| `[COURSE NAME]` | every page (titles, nav, footer) | the real course name |
-| `hello@example.com` | footers (marked `<!-- CONTACT EMAIL PLACEHOLDER -->`) | real contact email |
-| `FORM_ID` | `js/main.js` | your Formspree form ID |
-| Testimonials | `index.html`, marked `<!-- PLACEHOLDER: real testimonials -->` | real student quotes |
+| Testimonials | `index.html`, marked `<!-- PLACEHOLDER: test testimonials -->` | real student quotes |
 | Stats bar numbers | `index.html`, marked `<!-- PLACEHOLDER: real stats -->` | real numbers (or remove the bar) |
+| Contact email | footer of every page, marked `<!-- CONTACT EMAIL -->` | a "Questions? email" line once there's an address |
 | `<!-- ANALYTICS HERE -->` | `<head>` of every page | Google Analytics / Meta Pixel snippet |
 
 ### When the course price is decided
@@ -73,5 +61,6 @@ Any static server works. Don't open the files via `file://` — the clipboard bu
 - **Niches**: edit the `NICHES` array at the top of [js/niche-picker.js](js/niche-picker.js) — the quiz logic reads everything from it.
 - **Name word banks**: edit `BANKS` in [js/name-generator.js](js/name-generator.js).
 - **Ad/description templates**: edit `AD_TEMPLATES` and the description strings in [js/marketing-tools.js](js/marketing-tools.js).
-- **Colors/fonts**: design tokens live at the top of [css/style.css](css/style.css) (`:root`).
+- **Colors/fonts**: design tokens live at the top of [css/style.css](css/style.css) (`:root`). The primary blue (`#0064fe`) is sampled from the logo.
+- **Logo files**: `assets/logo.png` is the original; `assets/logo-wordmark.png` (nav) and `assets/favicon.png` are derived from it with the transparent margins trimmed. If the logo changes, regenerate those two.
 - Copy is in English; no text is baked into images, so localizing to Serbian later is a straight text edit.
