@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Shopify Niche Picker Quiz — [COURSE NAME]</title>
+  <meta name="description" content="Answer 7 quick questions and get your top 3 Shopify niche matches, scored on demand, competition, margin and difficulty. Free, no signup.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- ANALYTICS HERE -->
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="../index.html" class="nav-logo">[COURSE NAME]</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="name-generator.html" class="nav-link">Name Generator</a>
+        <a href="marketing-toolkit.html" class="nav-link">Marketing Toolkit</a>
+        <a href="../index.html#curriculum" class="nav-link">The Course</a>
+        <a href="../index.html#lead-magnet" class="btn btn-primary btn-sm nav-cta">Get the Free PDF</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container breadcrumb"><a href="../index.html">← Back to [COURSE NAME]</a></div>
+
+    <section class="tool-hero">
+      <div class="container container-narrow">
+        <p class="eyebrow">Free tool</p>
+        <h1>Niche Picker Quiz</h1>
+        <p>7 questions about your budget, interests and working style. We score them against 15 proven eCommerce niches and show your top 3 matches.</p>
+      </div>
+    </section>
+
+    <div class="container container-narrow">
+      <section class="tool-panel" aria-label="Niche picker quiz">
+        <div class="quiz-progress" aria-hidden="true"><div class="quiz-progress-fill" id="quiz-progress-fill"></div></div>
+        <div id="quiz-root" aria-live="polite">
+          <!-- Quiz renders here via js/niche-picker.js -->
+          <noscript><p>This quiz needs JavaScript to run. Please enable JavaScript and reload.</p></noscript>
+        </div>
+      </section>
+
+      <section class="tool-cta">
+        <h2>Found your niche? Now validate it.</h2>
+        <p>The free PDF shows you how to use AI to research demand, competitors and products before you spend a cent.</p>
+        <form class="capture-form capture-form-inline" data-capture data-source="pdf">
+          <label for="tc-email" class="visually-hidden">Email address</label>
+          <input type="email" id="tc-email" name="email" placeholder="you@example.com" required autocomplete="email">
+          <input type="hidden" name="source" value="pdf">
+          <button type="submit" class="btn btn-primary">Grab the free PDF</button>
+          <div class="form-success" hidden>
+            <p><strong>Check your inbox!</strong> Can't wait? <a href="../assets/lead-magnet.pdf" target="_blank" rel="noopener">Download it now →</a></p>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="nav-logo">[COURSE NAME]</p>
+        <p class="footer-tag">A practical Shopify course for people who want a store that sells.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="name-generator.html">Name Generator</a>
+        <a href="niche-picker.html">Niche Picker</a>
+        <a href="marketing-toolkit.html">Marketing Toolkit</a>
+      </nav>
+      <p class="footer-contact">Questions? <a href="mailto:hello@example.com">hello@example.com</a><!-- CONTACT EMAIL PLACEHOLDER --></p>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> [COURSE NAME]. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/niche-picker.js"></script>
+</body>
+</html>

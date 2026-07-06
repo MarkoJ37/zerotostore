@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Shopify Store Name Generator — [COURSE NAME]</title>
+  <meta name="description" content="Generate 10 brandable Shopify store names from your niche keyword, with instant domain availability check links. Free, no signup.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- ANALYTICS HERE -->
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="../index.html" class="nav-logo">[COURSE NAME]</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="niche-picker.html" class="nav-link">Niche Picker</a>
+        <a href="marketing-toolkit.html" class="nav-link">Marketing Toolkit</a>
+        <a href="../index.html#curriculum" class="nav-link">The Course</a>
+        <a href="../index.html#lead-magnet" class="btn btn-primary btn-sm nav-cta">Get the Free PDF</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container breadcrumb"><a href="../index.html">← Back to [COURSE NAME]</a></div>
+
+    <section class="tool-hero">
+      <div class="container container-narrow">
+        <p class="eyebrow">Free tool</p>
+        <h1>Store Name Generator</h1>
+        <p>Type your niche or a keyword, pick a style, and get 10 brandable store names — each with a one-click domain availability check.</p>
+      </div>
+    </section>
+
+    <div class="container container-narrow">
+      <section class="tool-panel" aria-label="Name generator">
+        <form id="gen-form">
+          <div class="field-row">
+            <div class="field">
+              <label for="gen-keyword">Your niche or keyword</label>
+              <input type="text" id="gen-keyword" placeholder="e.g. coffee, pets, yoga, home decor" required maxlength="30" autocomplete="off">
+              <span class="field-hint">One or two words works best.</span>
+            </div>
+          </div>
+
+          <div class="field" style="margin-bottom: 1.5rem;">
+            <label id="style-label">Name style</label>
+            <div class="pill-group" role="radiogroup" aria-labelledby="style-label">
+              <input type="radio" name="style" id="style-playful" value="playful" checked>
+              <label for="style-playful">Playful</label>
+              <input type="radio" name="style" id="style-premium" value="premium">
+              <label for="style-premium">Premium</label>
+              <input type="radio" name="style" id="style-minimal" value="minimal">
+              <label for="style-minimal">Minimal</label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" id="gen-btn">Generate 10 names</button>
+        </form>
+
+        <div id="gen-results" class="results-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="tool-cta">
+        <h2>Want the full AI playbook?</h2>
+        <p>This tool uses word banks. The free PDF shows you how to use AI for names, product descriptions, ads and more.</p>
+        <form class="capture-form capture-form-inline" data-capture data-source="pdf">
+          <label for="tc-email" class="visually-hidden">Email address</label>
+          <input type="email" id="tc-email" name="email" placeholder="you@example.com" required autocomplete="email">
+          <input type="hidden" name="source" value="pdf">
+          <button type="submit" class="btn btn-primary">Grab the free PDF</button>
+          <div class="form-success" hidden>
+            <p><strong>Check your inbox!</strong> Can't wait? <a href="../assets/lead-magnet.pdf" target="_blank" rel="noopener">Download it now →</a></p>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="nav-logo">[COURSE NAME]</p>
+        <p class="footer-tag">A practical Shopify course for people who want a store that sells.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="name-generator.html">Name Generator</a>
+        <a href="niche-picker.html">Niche Picker</a>
+        <a href="marketing-toolkit.html">Marketing Toolkit</a>
+      </nav>
+      <p class="footer-contact">Questions? <a href="mailto:hello@example.com">hello@example.com</a><!-- CONTACT EMAIL PLACEHOLDER --></p>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> [COURSE NAME]. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/name-generator.js"></script>
+</body>
+</html>

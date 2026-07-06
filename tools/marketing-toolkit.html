@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Marketing Toolkit for Shopify — [COURSE NAME]</title>
+  <meta name="description" content="Free Shopify marketing toolkit: ad copy builder, product description generator, and profit margin calculator with break-even ROAS. No signup.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- ANALYTICS HERE -->
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="../index.html" class="nav-logo">[COURSE NAME]</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="name-generator.html" class="nav-link">Name Generator</a>
+        <a href="niche-picker.html" class="nav-link">Niche Picker</a>
+        <a href="../index.html#curriculum" class="nav-link">The Course</a>
+        <a href="../index.html#lead-magnet" class="btn btn-primary btn-sm nav-cta">Get the Free PDF</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container breadcrumb"><a href="../index.html">← Back to [COURSE NAME]</a></div>
+
+    <section class="tool-hero">
+      <div class="container container-narrow">
+        <p class="eyebrow">Free tools</p>
+        <h1>Marketing Toolkit</h1>
+        <p>Three mini-tools every store owner needs: ad copy on demand, product descriptions that sell, and the margin math that keeps you profitable.</p>
+      </div>
+    </section>
+
+    <div class="container container-narrow">
+      <section class="tool-panel" aria-label="Marketing toolkit">
+
+        <div class="tabs" role="tablist" aria-label="Marketing tools">
+          <button class="tab-btn" role="tab" id="tab-calc" aria-controls="panel-calc" aria-selected="true">Profit Calculator</button>
+          <button class="tab-btn" role="tab" id="tab-ads" aria-controls="panel-ads" aria-selected="false">Ad Copy Builder</button>
+          <button class="tab-btn" role="tab" id="tab-desc" aria-controls="panel-desc" aria-selected="false">Product Descriptions</button>
+        </div>
+
+        <!-- ============ PROFIT MARGIN CALCULATOR ============ -->
+        <div class="tab-panel" role="tabpanel" id="panel-calc" aria-labelledby="tab-calc">
+          <form id="calc-form">
+            <div class="field-row">
+              <div class="field">
+                <label for="calc-price">Selling price ($)</label>
+                <input type="number" id="calc-price" min="0" step="0.01" placeholder="39.99" required inputmode="decimal">
+              </div>
+              <div class="field">
+                <label for="calc-cost">Product cost ($)</label>
+                <input type="number" id="calc-cost" min="0" step="0.01" placeholder="12.50" required inputmode="decimal">
+                <span class="field-hint">What you pay your supplier per unit.</span>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="calc-shipping">Shipping cost per order ($)</label>
+                <input type="number" id="calc-shipping" min="0" step="0.01" placeholder="4.00" required inputmode="decimal">
+              </div>
+              <div class="field">
+                <label for="calc-ads">Ad cost per sale ($)</label>
+                <input type="number" id="calc-ads" min="0" step="0.01" placeholder="8.00" required inputmode="decimal">
+                <span class="field-hint">Ad spend ÷ number of sales. Use 0 for organic traffic.</span>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Calculate my margins</button>
+          </form>
+
+          <div id="calc-results" class="calc-results" hidden>
+            <div class="metric" id="metric-profit">
+              <span class="metric-value" data-out="profit">—</span>
+              <span class="metric-label">Profit per sale</span>
+            </div>
+            <div class="metric" id="metric-margin">
+              <span class="metric-value" data-out="margin">—</span>
+              <span class="metric-label">Profit margin</span>
+            </div>
+            <div class="metric" id="metric-roas">
+              <span class="metric-value" data-out="roas">—</span>
+              <span class="metric-label">Break-even ROAS</span>
+            </div>
+          </div>
+          <div id="calc-verdict" class="calc-verdict" hidden></div>
+        </div>
+
+        <!-- ============ AD COPY BUILDER ============ -->
+        <div class="tab-panel" role="tabpanel" id="panel-ads" aria-labelledby="tab-ads" hidden>
+          <form id="ads-form">
+            <div class="field-row">
+              <div class="field">
+                <label for="ads-product">Product</label>
+                <input type="text" id="ads-product" placeholder="e.g. memory foam dog bed" required maxlength="60">
+              </div>
+              <div class="field">
+                <label for="ads-audience">Who is it for?</label>
+                <input type="text" id="ads-audience" placeholder="e.g. dog owners with older dogs" required maxlength="60">
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="ads-benefit">Main benefit</label>
+                <input type="text" id="ads-benefit" placeholder="e.g. relieves joint pain so your dog sleeps through the night" required maxlength="100">
+              </div>
+              <div class="field">
+                <label for="ads-offer">Your offer</label>
+                <input type="text" id="ads-offer" placeholder="e.g. 20% off this week + free shipping" required maxlength="60">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Build 3 ad variants</button>
+          </form>
+          <div id="ads-results" class="output-stack" aria-live="polite"></div>
+        </div>
+
+        <!-- ============ PRODUCT DESCRIPTION GENERATOR ============ -->
+        <div class="tab-panel" role="tabpanel" id="panel-desc" aria-labelledby="tab-desc" hidden>
+          <form id="desc-form">
+            <div class="field-row">
+              <div class="field">
+                <label for="desc-product">Product</label>
+                <input type="text" id="desc-product" placeholder="e.g. stainless steel pour-over coffee kettle" required maxlength="60">
+              </div>
+              <div class="field">
+                <label for="desc-audience">Who is it for?</label>
+                <input type="text" id="desc-audience" placeholder="e.g. home coffee enthusiasts" required maxlength="60">
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="desc-benefit">Main benefit</label>
+                <input type="text" id="desc-benefit" placeholder="e.g. precise pour control for a perfect brew every time" required maxlength="100">
+              </div>
+              <div class="field">
+                <label for="desc-feature">One standout feature</label>
+                <input type="text" id="desc-feature" placeholder="e.g. built-in thermometer in the lid" required maxlength="80">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Write my descriptions</button>
+          </form>
+          <div id="desc-results" class="output-stack" aria-live="polite"></div>
+        </div>
+
+      </section>
+
+      <section class="tool-cta">
+        <h2>Want copy that sounds like it was written for you?</h2>
+        <p>These tools use templates. The free PDF shows you the AI prompts that write genuinely original ads and descriptions.</p>
+        <form class="capture-form capture-form-inline" data-capture data-source="pdf">
+          <label for="tc-email" class="visually-hidden">Email address</label>
+          <input type="email" id="tc-email" name="email" placeholder="you@example.com" required autocomplete="email">
+          <input type="hidden" name="source" value="pdf">
+          <button type="submit" class="btn btn-primary">Grab the free PDF</button>
+          <div class="form-success" hidden>
+            <p><strong>Check your inbox!</strong> Can't wait? <a href="../assets/lead-magnet.pdf" target="_blank" rel="noopener">Download it now →</a></p>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="nav-logo">[COURSE NAME]</p>
+        <p class="footer-tag">A practical Shopify course for people who want a store that sells.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="name-generator.html">Name Generator</a>
+        <a href="niche-picker.html">Niche Picker</a>
+        <a href="marketing-toolkit.html">Marketing Toolkit</a>
+      </nav>
+      <p class="footer-contact">Questions? <a href="mailto:hello@example.com">hello@example.com</a><!-- CONTACT EMAIL PLACEHOLDER --></p>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year>2026</span> [COURSE NAME]. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/marketing-tools.js"></script>
+</body>
+</html>
