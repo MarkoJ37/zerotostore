@@ -64,3 +64,11 @@ Any static server works. Don't open the files via `file://` — the clipboard bu
 - **Colors/fonts**: design tokens live at the top of [css/style.css](css/style.css) (`:root`). The primary blue (`#0064fe`) is sampled from the logo.
 - **Logo files**: `assets/logo.png` is the original; `assets/logo-wordmark.png` (nav) and `assets/favicon.png` are derived from it with the transparent margins trimmed. If the logo changes, regenerate those two.
 - Copy is in English; no text is baked into images, so localizing to Serbian later is a straight text edit.
+
+## Reel Studio integration
+
+`tools/reel-studio.html` links the two public sample Reels and the existing Cloudflare
+studio to the free guide and course waitlist. It adds no service or tracking dependency.
+Videos load only when requested. Generation and online exports remain disconnected;
+update the availability copy when those credentials are configured. The studio opens
+in another tab and links back to this funnel page.
