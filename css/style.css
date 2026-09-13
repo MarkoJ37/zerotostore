@@ -1095,13 +1095,16 @@ p { text-wrap: pretty; }
 }
 
 /* Reel Factory's dedicated product section; styles stay scoped to the funnel. */
-.factory-section{background:var(--primary-soft);color:var(--ink);border-block:1px solid var(--border)}
+.factory-section{--primary:#d1ee8a;--primary-dark:#bddb76;--ink:#f0f1e9;--ink-soft:#c5ccbf;--muted:#a4ac9e;--border:#353d32;--accent:#d1ee8a;--navy:#1a1e19;background:#111411;color:var(--ink);border-block:1px solid var(--border);color-scheme:dark}
+.factory-section .btn-primary{color:#111411;box-shadow:none}
+.factory-section .btn-primary:hover{box-shadow:0 6px 20px #d1ee8a20}
+.factory-section .factory-poster{color:#26321d}
 .factory-intro{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center}
 .factory-intro h2{font-size:clamp(42px,5vw,70px);line-height:1.05;letter-spacing:-2px;margin:20px 0}
 .factory-intro h2 em{font-family:Georgia,serif;color:var(--primary);font-weight:400}
 .factory-copy{max-width:540px;font-size:18px;color:var(--ink-soft);margin:24px 0}
 .factory-note{max-width:520px;font-size:13px;line-height:1.6;color:var(--muted);margin-top:18px}
-.factory-poster{max-width:350px;aspect-ratio:4/5;padding:32px;display:flex;flex-direction:column;justify-content:space-between;background:var(--primary);color:white;border-radius:18px;transform:rotate(4deg);box-shadow:var(--shadow-lg);justify-self:center}
+.factory-poster{max-width:350px;aspect-ratio:4/5;padding:32px;display:flex;flex-direction:column;justify-content:space-between;background:var(--primary);color:#26321d;border-radius:18px;transform:rotate(4deg);box-shadow:var(--shadow-lg);justify-self:center}
 .factory-poster span{font-size:10px;letter-spacing:2px}.factory-poster p{font-size:clamp(40px,4vw,62px);line-height:1.05;letter-spacing:-2px;font-weight:700}.factory-poster em{font-family:Georgia,serif;font-weight:400}
 .factory-screening{display:grid;grid-template-columns:1fr 1.2fr;gap:48px;align-items:center;border-top:1px solid var(--border);padding-top:48px;margin-top:64px}.factory-screening h3{font-size:32px;margin:14px 0}
 .factory-films{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.factory-films figure{margin:0;min-width:0}.factory-films video{display:block;width:100%;aspect-ratio:9/16;max-height:360px;background:var(--navy);border-radius:12px}.factory-films figcaption{font-size:14px;margin-top:12px;font-weight:600}

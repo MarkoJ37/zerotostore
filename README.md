@@ -67,7 +67,7 @@ Any static server works. Don't open the files via `file://` — the clipboard bu
 
 ## Reel Factory integration
 
-The dedicated `#reel-studio` homepage section uses ZeroToStore's colors, shows two
+The dedicated `#reel-studio` homepage section uses Reel Factory's charcoal/lime colors, shows two
 examples and opens the original Reel Factory app directly. The app retains its
 own charcoal/lime brand design. The old `tools/reel-studio.html` URL redirects to
 this section. No additional service or tracking dependency is used.
