@@ -65,10 +65,11 @@ Any static server works. Don't open the files via `file://` — the clipboard bu
 - **Logo files**: `assets/logo.png` is the original; `assets/logo-wordmark.png` (nav) and `assets/favicon.png` are derived from it with the transparent margins trimmed. If the logo changes, regenerate those two.
 - Copy is in English; no text is baked into images, so localizing to Serbian later is a straight text edit.
 
-## Reel Studio integration
+## Reel Factory integration
 
-`tools/reel-studio.html` links the two public sample Reels and the existing Cloudflare
-studio to the free guide and course waitlist. It adds no service or tracking dependency.
-Videos load only when requested. Generation and online exports remain disconnected;
-update the availability copy when those credentials are configured. The studio opens
-in another tab and links back to this funnel page.
+The dedicated `#reel-studio` homepage section uses ZeroToStore's colors, shows two
+examples and opens the original Reel Factory app directly. The app retains its
+own charcoal/lime brand design. The old `tools/reel-studio.html` URL redirects to
+this section. No additional service or tracking dependency is used.
+Generation and online exports remain disconnected; update the availability copy
+when workflow credentials are configured.
