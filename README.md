@@ -1,4 +1,4 @@
-# ZeroToStore — Shopify Course Funnel Site
+# Store From Scratch — Shopify Course Funnel Site
 
 A static marketing funnel for the Shopify eCommerce course: lead magnet email capture, three free interactive tools, and a waitlist/pricing section. Plain HTML/CSS/JS — no build step, no backend.
 
@@ -19,6 +19,10 @@ A static marketing funnel for the Shopify eCommerce course: lead magnet email ca
 4. Wait ~1 minute. Your site is live at `https://YOUR-USERNAME.github.io/YOUR-REPO/`.
 
 All links are relative, so the site works from the subpath without any changes.
+
+### Custom domain: storefromscratch.com
+
+After registering storefromscratch.com, configure its DNS for GitHub Pages, add storefromscratch.com under Settings > Pages > Custom domain, and enable HTTPS once the certificate is ready. Domain registration and DNS setup are separate from this source rebrand.
 
 ## 2. Email capture (Formspree)
 
@@ -62,7 +66,7 @@ Any static server works. Don't open the files via `file://` — the clipboard bu
 - **Name word banks**: edit `BANKS` in [js/name-generator.js](js/name-generator.js).
 - **Ad/description templates**: edit `AD_TEMPLATES` and the description strings in [js/marketing-tools.js](js/marketing-tools.js).
 - **Colors/fonts**: design tokens live at the top of [css/style.css](css/style.css) (`:root`). The primary blue (`#0064fe`) is sampled from the logo.
-- **Logo files**: `assets/logo.png` is the original; `assets/logo-wordmark.png` (nav) and `assets/favicon.png` are derived from it with the transparent margins trimmed. If the logo changes, regenerate those two.
+- **Branding**: the navigation and footer use a live-text Store From Scratch wordmark styled by .nav-logo and .logo-accent in css/style.css. The matching storefront favicon is assets/favicon.svg. The older PNG logo assets are unused.
 - Copy is in English; no text is baked into images, so localizing to Serbian later is a straight text edit.
 
 ## Reel Factory integration

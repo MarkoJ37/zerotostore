@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ZeroToStore — Shopify Course Funnel
+   Store From Scratch — Shopify Course Funnel
    Design system: modern-commercial. Indigo primary, ember orange accent,
    Bricolage Grotesque display + Inter body.
    ========================================================================== */
@@ -12,7 +12,7 @@
   --ink-soft: #2b3a52;
   --muted: #5a6a84;
   --border: #e2e8f3;
-  --primary: #0064fe; /* ZeroToStore logo blue */
+  --primary: #0064fe; /* Store From Scratch logo blue */
   --primary-dark: #004fd0;
   --primary-soft: #e6f0ff;
   --accent: #ff6b2c;
@@ -176,9 +176,9 @@ p { text-wrap: pretty; }
   text-decoration: none;
   letter-spacing: -0.01em;
 }
-.nav-logo-img { height: 32px; width: auto; display: block; }
-.logo-to { color: var(--primary); }
-.site-footer .logo-to { color: #4d9aff; }
+.nav-logo { white-space: nowrap; }
+.logo-accent { color: var(--primary); }
+.site-footer .logo-accent { color: #4d9aff; }
 .nav-menu {
   display: flex;
   align-items: center;
